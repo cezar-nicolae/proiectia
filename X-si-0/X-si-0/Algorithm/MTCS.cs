@@ -163,13 +163,18 @@ namespace X_si_0.Algorithm
 {
     class MTCS
     {
+        private int _iterations = 1000;
+        public MTCS(int iterations)
+        {
+            _iterations = iterations;
+        }
+
         public TreeNode search(Board initial_state)
         {
             TreeNode root = new TreeNode(initial_state, null);
             // Cred ca asta e valoarea pe care o sa o dai tu de acolo din interfata
-            int iterations = 1000;
 
-            for (int i = 0; i < iterations; i++)
+            for (int i = 0; i < _iterations; i++)
             {
                 TreeNode node = select(root);
 

@@ -38,6 +38,9 @@ namespace X_si_0
             this.btn20 = new System.Windows.Forms.Button();
             this.btn21 = new System.Windows.Forms.Button();
             this.btn22 = new System.Windows.Forms.Button();
+            this.nrSimTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.updateSimBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn00
@@ -130,11 +133,42 @@ namespace X_si_0
             this.btn22.UseVisualStyleBackColor = true;
             this.btn22.Click += new System.EventHandler(this.placeSymbol);
             // 
+            // nrSimTextBox
+            // 
+            this.nrSimTextBox.Location = new System.Drawing.Point(12, 532);
+            this.nrSimTextBox.Name = "nrSimTextBox";
+            this.nrSimTextBox.Size = new System.Drawing.Size(131, 26);
+            this.nrSimTextBox.TabIndex = 9;
+            this.nrSimTextBox.Text = "1000";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 496);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(135, 20);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Numar de simulari";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // updateSimBtn
+            // 
+            this.updateSimBtn.Location = new System.Drawing.Point(163, 527);
+            this.updateSimBtn.Name = "updateSimBtn";
+            this.updateSimBtn.Size = new System.Drawing.Size(127, 37);
+            this.updateSimBtn.TabIndex = 11;
+            this.updateSimBtn.Text = "Actualizeaza";
+            this.updateSimBtn.UseVisualStyleBackColor = true;
+            this.updateSimBtn.Click += new System.EventHandler(this.updateSimBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 489);
+            this.ClientSize = new System.Drawing.Size(523, 581);
+            this.Controls.Add(this.updateSimBtn);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.nrSimTextBox);
             this.Controls.Add(this.btn22);
             this.Controls.Add(this.btn21);
             this.Controls.Add(this.btn20);
@@ -147,6 +181,7 @@ namespace X_si_0
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -161,6 +196,9 @@ namespace X_si_0
         private System.Windows.Forms.Button btn20;
         private System.Windows.Forms.Button btn21;
         private System.Windows.Forms.Button btn22;
+        private System.Windows.Forms.TextBox nrSimTextBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button updateSimBtn;
     }
 }
 

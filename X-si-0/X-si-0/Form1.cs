@@ -18,6 +18,8 @@ namespace X_si_0
 
         Board board;
 
+        private int _iterations = 1000;
+
         public Form1()
         {
             InitializeComponent();
@@ -72,7 +74,7 @@ namespace X_si_0
         void updateScreenBot()
         {
 
-            MTCS mtcs = new MTCS();
+            MTCS mtcs = new MTCS(_iterations);
             var best_move = mtcs.search(board);
 
             if(best_move.board != null)
@@ -120,6 +122,23 @@ namespace X_si_0
             {
                 buttons[i].Text = "";
                 buttons[i].Enabled = true;
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void updateSimBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int.TryParse(nrSimTextBox.Text.ToString(), out _iterations);
+            }
+            catch(Exception ex)
+            {
+
             }
         }
 
