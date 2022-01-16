@@ -19,8 +19,8 @@ namespace X_si_0.Algorithm
         public TreeNode(Board boardArg, TreeNode parentArg)
         {
             board = boardArg;
-            
-            if(board.is_win() || board.is_draw())
+
+            if(board != null && (board.is_win() || board.is_draw()))
             {
                 is_terminal = true;
             }

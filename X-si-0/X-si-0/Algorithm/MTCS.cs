@@ -225,8 +225,7 @@ namespace X_si_0.Algorithm
                     node.is_fully_expanded = true;
                 }
 
-                return new_node;
-                //}    
+                return new_node;  
             }
 
             //Nu ar trb sa ajunga aici, e doar pusa sa nu mai latre C# la mine
@@ -237,7 +236,7 @@ namespace X_si_0.Algorithm
         {
             Random random = new Random();
 
-            while (!board.is_win())
+            while (board != null && !board.is_win())
             {
                 try
                 {

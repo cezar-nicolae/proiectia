@@ -74,34 +74,42 @@ namespace X_si_0
 
             MTCS mtcs = new MTCS();
             var best_move = mtcs.search(board);
-            Console.WriteLine(best_move.board.board[0, 1]);
-            board.board = best_move.board.board;//trimit tablei curente tabla cu modificari
-            //!!!!!button.Text = board.board[coord_x, coord_y].ToString();
-            //Console.WriteLine(board.board);
-            int index = 0;
 
-            for (int row = 0; row < 3; row++)
+            if(best_move.board != null)
             {
-                for (int col = 0; col < 3; col++)
+                board.board = best_move.board.board; //trimit tablei curente tabla cu modificari
+
+                int index = 0;
+
+                for (int row = 0; row < 3; row++)
                 {
-                    //string s = board.board[row, col];
-                    Console.WriteLine(buttons[index].Text);
-                    Console.WriteLine(board.board[row, col]);
-                    if (board.board[row, col]=='0')
+                    for (int col = 0; col < 3; col++)
                     {
-                        buttons[index].Text = "0";
-                        buttons[index].Enabled = false;
+                        //string s = board.board[row, col];
+                        Console.WriteLine(buttons[index].Text);
+                        Console.WriteLine(board.board[row, col]);
+                        if (board.board[row, col] == '0')
+                        {
+                            buttons[index].Text = "0";
+                            buttons[index].Enabled = false;
+                        }
+                        index++;
                     }
-                    index++;
+                }
+
+                // Daca s-a castigat un meci
+                if (board.is_win())
+                {
+                    MessageBox.Show("Meciul s-a terminat a castigat calculatorul!");
+                    resetBoard();
                 }
             }
-
-            // Daca s-a castigat un meci
-            if (board.is_win())
+            else
             {
-                MessageBox.Show("Meciul s-a terminat a castigat calculatorul!");
+                MessageBox.Show("Meciul s-a terminat egal!");
                 resetBoard();
             }
+            
         }
 
         void resetBoard()

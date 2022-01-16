@@ -18,3 +18,13 @@ F:\X-si-0\X-si-0\obj\Debug\X-si-0.csproj.GenerateResource.cache
 F:\X-si-0\X-si-0\obj\Debug\X-si-0.csproj.CoreCompileInputs.cache
 F:\X-si-0\X-si-0\obj\Debug\X-si-0.exe
 F:\X-si-0\X-si-0\obj\Debug\X-si-0.pdb
+C:\Users\creat\source\repos\CezarIaaa\X-si-0\X-si-0\bin\Debug\X-si-0.exe.config
+C:\Users\creat\source\repos\CezarIaaa\X-si-0\X-si-0\bin\Debug\X-si-0.exe
+C:\Users\creat\source\repos\CezarIaaa\X-si-0\X-si-0\bin\Debug\X-si-0.pdb
+C:\Users\creat\source\repos\CezarIaaa\X-si-0\X-si-0\obj\Debug\X-si-0.csproj.AssemblyReference.cache
+C:\Users\creat\source\repos\CezarIaaa\X-si-0\X-si-0\obj\Debug\X_si_0.Form1.resources
+C:\Users\creat\source\repos\CezarIaaa\X-si-0\X-si-0\obj\Debug\X_si_0.Properties.Resources.resources
+C:\Users\creat\source\repos\CezarIaaa\X-si-0\X-si-0\obj\Debug\X-si-0.csproj.GenerateResource.cache
+C:\Users\creat\source\repos\CezarIaaa\X-si-0\X-si-0\obj\Debug\X-si-0.csproj.CoreCompileInputs.cache
+C:\Users\creat\source\repos\CezarIaaa\X-si-0\X-si-0\obj\Debug\X-si-0.exe
+C:\Users\creat\source\repos\CezarIaaa\X-si-0\X-si-0\obj\Debug\X-si-0.pdb
